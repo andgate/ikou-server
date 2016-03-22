@@ -22,7 +22,7 @@ config :ikou_server, IkouServer.Endpoint,
 config :logger, level: :info
 
 # Configure your database
-config :hello_phoenix, HelloPhoenix.Repo,
+config :ikou_server, IkouServer.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   pool_size: 20
