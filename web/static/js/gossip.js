@@ -39,7 +39,7 @@ class Gossip {
   static sanitize(html){ return $("<div/>").text(html).html() }
   
   static messageTemplate(msg){
-    let username = this.sanitize(msg.ser || "anonymous")
+    let username = this.sanitize(msg.user || "anonymous")
     let body = this.sanitize(msg.body)
     
     return(`<p><a href='#'>[${username}]</a>&nbsp; ${body}</p>`)
